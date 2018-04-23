@@ -1,16 +1,35 @@
 package game;
 
+import labyrinth.Dungeon;
 import model.team.Team;
 import view.GeneralMessage;
 import view.TeamMessage;
 
 public class Game {
-    public static void start() {
-        GeneralMessage.welcomeInfo();
+    private static Dungeon dungeon = new Dungeon();
+    private static Team team;
 
-        String teamName = UserInteraction.askName("Team name");
+    Game() {
 
-        Team team = new Team(teamName);
-        TeamMessage.printTeamInfo(team);
     }
+
+    public static void start() {
+        //GeneralMessage.welcomeInfo();
+        String teamName = " ";//UserInteraction.askName("Team name");
+        team = new Team(teamName, dungeon.getRooms().get(0));
+        //TeamMessage.printTeamInfo(team);
+        dungeon.printMap();
+        turn();
+    }
+    private static void turn() {
+        String s = team.getPosition().getName();
+        while (!"Exit".equals(s)) {
+            team.getPosition().printRoomInfo();
+            team.battlePhase();
+            s = team.getPosition().getName();
+            team.chooseNextRoom(team.getPosition());
+            team.battlePhase();
+        }
+    }
+
 }

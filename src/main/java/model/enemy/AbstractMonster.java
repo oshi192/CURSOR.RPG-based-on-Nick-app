@@ -6,6 +6,7 @@ import lombok.Setter;
 @Getter
 public abstract class AbstractMonster {
     private static final int MIN_HEALTH = 0;
+    public static final int MIDDLE_HEALTH_NUMBER = 120;
 
     @Setter
     private boolean spellImmune = false;
