@@ -1,14 +1,13 @@
 package model.enemy.kind.orkoid.impl;
 
 import model.enemy.AbstractMonster;
-import model.enemy.kind.orkoid.Orkoids;
+import model.enemy.Monsters;
 
 public class OrkWarlord extends AbstractMonster {
     private static final int[] DAMAGE_OPTIONS = {2, 6};
 
     public OrkWarlord() {
-        super("Orkoid", Orkoids.OrkWarlord.getName(), Orkoids.OrkWarlord.getHealth(),
-                Orkoids.OrkWarlord.getInitiative(), Orkoids.OrkWarlord.getCost());
+        super(Monsters.Orkoids5);
     }
 
     @Override

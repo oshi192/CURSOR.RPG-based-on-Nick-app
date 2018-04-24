@@ -1,14 +1,14 @@
 package model.enemy.kind.orkoid.impl;
 
 import model.enemy.AbstractMonster;
-import model.enemy.kind.orkoid.Orkoids;
+import model.enemy.Monsters;
+
 
 public class UnstableAlchemist extends AbstractMonster {
     private static final int[] DAMAGE_OPTIONS = {0, 100};
 
     public UnstableAlchemist() {
-        super("Orkoid", Orkoids.UnstableAlchemist.getName(), Orkoids.UnstableAlchemist.getHealth(),
-                Orkoids.UnstableAlchemist.getInitiative(), Orkoids.UnstableAlchemist.getCost());
+        super(Monsters.Orkoids6);
     }
 
     @Override

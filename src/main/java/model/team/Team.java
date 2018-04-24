@@ -21,13 +21,14 @@ public class Team implements Colors, GameConstants {
     private Room position;
     @Getter
     @Setter
-    private Room previousPosition = null;
+    private Room previousPosition;
 
     // Create custom constructor to create Team
     public Team(String name, Room position) {
         //heroes = createTeam();
         this.name = name;
         this.position = position;
+        previousPosition=position;
     }
 
     private AbstractRace[] createTeam() {
@@ -45,11 +46,9 @@ public class Team implements Colors, GameConstants {
     // Function to print all members name in team
     private String printTeamMembers() {
         String[] heroesName = new String[heroes.length];
-
         for (int i = 0; i < heroes.length; i++) {
             heroesName[i] = String.format("%s (%.0f)", heroes[i].getHeroName(), heroes[i].getHealth());
         }
-
         return String.join(", ", heroesName);
     }
 
@@ -61,7 +60,6 @@ public class Team implements Colors, GameConstants {
             Console.printRandomLine((PARAGRAPH_LENGTH + 1) / 2 - (line.length() + 1) / 2, RED, true);
             position.printEnemies();
             Console.printRandomLine(PARAGRAPH_LENGTH, RED, true);
-
         }
     }
 
@@ -71,8 +69,9 @@ public class Team implements Colors, GameConstants {
     }
 
     public void chooseNextRoom(Room r) {
-        r.printExits();
-        int next = Validator.getNumber("move to: ", 1, r.getExits().size()) - 1;
-        position = r.getExits().get(next);
+        int shift=r.printExits(previousPosition,position);
+        int next = Validator.getNumber("move to: ", 1, r.getExits().size());
+        r = r.getExits().get((next+shift-1)%r.getExits().size());
+        setPosition(r);
     }
 }

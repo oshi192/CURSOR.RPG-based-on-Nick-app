@@ -9,5 +9,4 @@ public interface Colors {
     String BLUE = "\u001B[34m";
     String PURPLE = "\u001B[35m";
     String CYAN = "\u001B[36m";
-
 }

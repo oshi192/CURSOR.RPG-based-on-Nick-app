@@ -17,12 +17,12 @@ public abstract class AbstractMonster {
     private int initiative;
     private int cost;
 
-    public AbstractMonster(String kind, String name, int health, int initiative, int cost) {
-        this.kind = kind;
-        this.name = name;
-        this.health = health;
-        this.initiative = initiative;
-        this.cost = cost;
+    public AbstractMonster(Monsters m) {
+        this.kind = m.name();
+        this.name = m.name;
+        this.health = m.health;
+        this.initiative = m.initiative;
+        this.cost = m.cost;
     }
 
     /**
