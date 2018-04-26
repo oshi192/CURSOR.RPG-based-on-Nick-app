@@ -1,13 +1,11 @@
 package game;
 
 import labyrinth.Dungeon;
-import labyrinth.Room;
-import model.team.Team;
 import view.GeneralMessage;
 import view.TeamMessage;
 
 public class Game {
-    private static Dungeon dungeon = new Dungeon();
+    final static Dungeon dungeon = new Dungeon();
     private static Team team;
 
     Game() {
@@ -15,14 +13,12 @@ public class Game {
     }
 
     public static void start() {
-        //GeneralMessage.welcomeInfo();
-        String teamName = " ";
-        //String teamName = UserInteraction.askName("Team name");
-        team = new Team(teamName, dungeon.getRooms().get(0));
-        //TeamMessage.printTeamInfo(team);
-        //dungeon.printMap();
+        GeneralMessage.welcomeInfo();
+        team = new Team();
+        TeamMessage.printTeamInfo(team);
         turn();
     }
+
     private static void turn() {
         String s = team.getPosition().getName();
         while (!"Exit".equals(s)) {

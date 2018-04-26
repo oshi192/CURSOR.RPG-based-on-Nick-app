@@ -1,24 +1,25 @@
 package view;
 
+import game.Team;
 import model.race.AbstractRace;
-import model.team.Team;
+import util.Colors;
 
-public class TeamMessage implements MagicColors {
+public class TeamMessage implements Colors {
     /**
-     * print info about Team
+     * print info about game.Team
      *
-     * @param team instance of Team
+     * @param team instance of game.Team
      */
     public static void printTeamInfo(Team team) {
         String leftAlignFormat = "| %-20s | %-20s | %-20s | %-20s |%n";
-        System.out.println(CYAN + "\n\tTeam: " + team.getName() + RESET);
-        printTeamTableHeader(leftAlignFormat, team.getHeroes());
-        printTeamMemberInfo(leftAlignFormat, team.getHeroes());
+        //System.out.println(CYAN + "\n\tgame.Team: " + team.getName() + RESET);
+       // printTeamTableHeader(leftAlignFormat, team.getHeroes());
+        //printTeamMemberInfo(leftAlignFormat, team.getHeroes());
     }
 
 
     /**
-     * print header for table about Team
+     * print header for table about game.Team
      *
      * @param format special format String
      * @param hero   array of heroes
@@ -32,7 +33,7 @@ public class TeamMessage implements MagicColors {
 
 
     /**
-     * divider in table about Team
+     * divider in table about game.Team
      */
     private static void printTeamTableDivider() {
         System.out.format("+----------------------+----------------------+----------------------" +
@@ -41,7 +42,7 @@ public class TeamMessage implements MagicColors {
 
 
     /**
-     * print info about Team members
+     * print info about game.Team members
      *
      * @param format special format String
      * @param hero   array of heroes
@@ -57,7 +58,7 @@ public class TeamMessage implements MagicColors {
 
 
     /**
-     * print info about vital characteristics of Team's heroes (Part #1)
+     * print info about vital characteristics of game.Team's heroes (Part #1)
      * (such as Profession, Health, Mana, Rage)
      *
      * @param format special format String
@@ -92,7 +93,7 @@ public class TeamMessage implements MagicColors {
 
 
     /**
-     * print info about characteristics of Team's heroes (Part #2)
+     * print info about characteristics of game.Team's heroes (Part #2)
      * (such as Charisma, Stamina, Intellect, Agility, Concentration)
      *
      * @param format special format String

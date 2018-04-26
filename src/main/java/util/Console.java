@@ -1,5 +1,7 @@
 package util;
 
+import model.hero.Races;
+
 public class Console implements GameConstants,Colors{
 
     public static void fillSpace(int maxLength, int length, String s) {
@@ -27,6 +29,7 @@ public class Console implements GameConstants,Colors{
         }
         System.out.println();
     }
+
     public static void printRandomLine(int n,String color,boolean isEndLine) {
         System.out.print(color);
         StringBuilder sb = new StringBuilder();
@@ -36,10 +39,41 @@ public class Console implements GameConstants,Colors{
         System.out.print(sb);
         System.out.print(RESET+(isEndLine?"\n":""));
     }
+
+    public static void printRandomLine(String line,int n,String color,boolean isEndLine) {
+        Console.printRandomLine(1, color, false);
+    }
+
     public static void fillSpace(int n,String s){
         for(int i=0;i<n;i++){
             System.out.print(s);
         }
     }
+
+    void printTable(){
+        printTopLine(NUMBER_OF_HEROES);
+    }
+
+    //////////////////  print table /////////////////////////////////////////////////////////////////////////////
+    private void printTeam() {
+//        printLine(TABLE_COLOR + "\u250F", "\u2533", "\u2513" + RESET);//┏ ┳ ┓
+//        printLine(TABLE_COLOR + "\u2523", "\u254B", "\u252B" + RESET);//┣ ╋ ┫
+//        printLine(TABLE_COLOR + "\u2517", "\u253B", "\u251B" + RESET);//┗ ┻ ┛
+    }
+
+    private void printTopLine(int number) {
+        System.out.print(TABLE_COLOR + "\u250F");//┏
+        int k=(PARAGRAPH_LENGTH - number - 1) / number;
+        for(int i=0;i<number-1;i++) {
+            fillSpace(k, "\u2501");// ━
+            System.out.print("\u2533");
+        }
+        fillSpace((PARAGRAPH_LENGTH -(k-1)*number)-1, "\u2501");
+        System.out.println("\u2513"+RESET);
+       // System.out.print("\u2503" + RESET);//┃
+    }
+
+    /////////////////////////////////end print table/////////////////////////////////////////////////////////////
+
 
 }

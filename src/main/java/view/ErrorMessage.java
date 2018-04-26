@@ -1,6 +1,8 @@
 package view;
 
-public class ErrorMessage implements MagicColors {
+import util.Colors;
+
+public class ErrorMessage implements Colors {
     /**
      * error info if user choose item not from list
      */

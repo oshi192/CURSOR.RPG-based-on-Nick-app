@@ -1,16 +1,19 @@
 package view;
 
-public class GeneralMessage implements MagicColors {
+import util.Colors;
+import util.Console;
+import util.GameMessages;
+
+public class GeneralMessage implements GameMessages {
     /**
      * welcome message
      */
     public static void welcomeInfo() {
-        System.out.println(CYAN + "\n\tHello player, start game!\n" + RESET);
-
-        System.out.format("\t%sIn this one you will create a Team with 3 heroes\n" +
-                "\tOne of them is Leader and determinate order of moves\n" +
-                "\tOur Team will fight against monsters in some fabulous location...\n" +
-                "\tNow you need some preparations... Ready to start? Go!%s\n\n", CYAN, RESET);
+        System.out.print("-------------------------------- ");
+        System.out.print(GAME_NAME);
+        System.out.println(" ------------------------------");
+        Console.printParagraph(GAME_DESCRIPTION);
+        System.out.println("Lets starting with creating the Team: ");
     }
 
 

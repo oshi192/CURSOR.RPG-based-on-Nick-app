@@ -19,11 +19,11 @@ The team will be fight against monsters in some fabulous location.
 
 _**Location is unique for each play and generated with 
 [Prim's Algorithm](https://en.wikipedia.org/wiki/Prim%27s_algorithm).**_
-For each play Team of heroes randomly placed in some part of our fabulous location
+For each play game.Team of heroes randomly placed in some part of our fabulous location
 and start to discover locality, in which exist monsters... or not).
 
 Game ends when the goal is reached (reach some Rabbit Hole to next location),
-or when the Team's Leader dies.
+or when the game.Team's Leader dies.
 
 
 #### Prerequisites:

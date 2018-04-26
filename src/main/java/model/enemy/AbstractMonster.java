@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-public abstract class AbstractMonster {
+public class AbstractMonster {
     private static final int MIN_HEALTH = 0;
     public static final int MIDDLE_HEALTH_NUMBER = 120;
 
@@ -34,5 +34,7 @@ public abstract class AbstractMonster {
         this.health = health < MIN_HEALTH ? MIN_HEALTH : health;
     }
 
-    public abstract int attack();
+    public  int attack(){
+        return 0;//will fix in battle steps
+    }
 }

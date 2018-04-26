@@ -2,60 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4c5ba27-baa4-4c91-811f-c6891e30fabf" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/hero/HeroNames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/hero/Races.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/hero/Speciality.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/GameMessages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Mode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/UserInteraction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/labyrinth/Dungeon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/labyrinth/Dungeon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/labyrinth/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/labyrinth/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/labyrinth/RoomDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/labyrinth/RoomDescription.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/AbstractMonster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/AbstractMonster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/Creatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/Creatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/BlackDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/BlackDragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/DoomSpider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/DoomSpider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Doomguard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Doomguard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Imp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Imp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Minotaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Minotaur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Succubus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Succubus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/Orkoids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/Orkoids.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Goblin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Ogre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Ogre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Ork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Ork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/OrkShaman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/OrkShaman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/OrkWarlord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/OrkWarlord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/UnstableAlchemist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/UnstableAlchemist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/Undeads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/Undeads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Banshee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Banshee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/BoneDragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/BoneDragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Lich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Lich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Skeleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Skeleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/SkeletonChief.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/SkeletonChief.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Zombie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/team/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/Colors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Colors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/Creatures.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/BlackDragon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/DoomSpider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Doomguard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Imp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Minotaur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Succubus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/Orkoids.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Goblin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Ogre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Ork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/OrkShaman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/OrkWarlord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/UnstableAlchemist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/Undeads.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Banshee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/BoneDragon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Lich.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Skeleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/SkeletonChief.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Zombie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/store/RaceMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/store/components/DwarfHeroesMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/store/components/ElfHeroesMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/store/components/HumanHeroesMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/GameConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/GameConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ErrorMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/GeneralMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GeneralMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MagicColors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/TeamMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TeamMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/game/UserInteraction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/labyrinth/Dungeon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/labyrinth/Dungeon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/labyrinth/Room$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/labyrinth/Room$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/labyrinth/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/labyrinth/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/labyrinth/RoomDescription.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/labyrinth/RoomDescription.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/AbstractMonster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/AbstractMonster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/Creatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/Creatures.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/BlackDragon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/BlackDragon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/DoomSpider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/DoomSpider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Doomguard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Doomguard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Imp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Imp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Minotaur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Minotaur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Succubus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Succubus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/Orkoids.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/Orkoids.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/Goblin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/Goblin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/Ogre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/Ogre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/Ork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/Ork.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/OrkShaman.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/OrkShaman.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/OrkWarlord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/OrkWarlord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/UnstableAlchemist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/UnstableAlchemist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/Undeads.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/Undeads.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Banshee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Banshee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/BoneDragon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/BoneDragon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Lich.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Lich.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Skeleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Skeleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/SkeletonChief.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/SkeletonChief.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Zombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Zombie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/team/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/team/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/Creatures.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/BlackDragon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/DoomSpider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Doomguard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Imp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Minotaur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/creature/impl/Succubus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/Orkoids.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/Goblin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/Ogre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/Ork.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/OrkShaman.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/OrkWarlord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/orkoid/impl/UnstableAlchemist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/Undeads.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Banshee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/BoneDragon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Lich.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Skeleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/SkeletonChief.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/enemy/kind/undead/impl/Zombie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/team/Team.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/store/RaceMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/store/components/DwarfHeroesMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/store/components/ElfHeroesMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/store/components/HumanHeroesMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/Console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/GameConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/GameConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/Validator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/ErrorMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/ErrorMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/GeneralMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/GeneralMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MagicColors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/TeamMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/TeamMessage.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,73 +98,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Team.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/Team.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/Mode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Room.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/labyrinth/Room.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2041#2042#0" expanded="true" />
-                <element signature="e#2097#2098#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dungeon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/labyrinth/Dungeon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1725#1726#0" expanded="true" />
-                <element signature="e#1753#1754#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Team.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/team/Team.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="-335">
+              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StartGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/StartGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-              <folding>
-                <element signature="e#88#89#0" expanded="true" />
-                <element signature="e#116#117#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoomDescription.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/labyrinth/RoomDescription.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -141,44 +146,62 @@
       <file leaf-file-name="AbstractMonster.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/AbstractMonster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Doomguard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Doomguard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="510">
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#929#930#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Monsters.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/Monsters.java">
+      <file leaf-file-name="BoneDragon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/undead/BoneDragon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="60">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ogre.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Ogre.java">
+      <file leaf-file-name="Hero.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/hero/Hero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="325">
+              <caret line="94" column="79" lean-forward="true" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractAbility.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/hero/AbstractAbility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoomDescription.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/labyrinth/RoomDescription.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dungeon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/labyrinth/Dungeon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="855">
+              <caret line="57" column="103" selection-start-line="57" selection-start-column="103" selection-end-line="57" selection-end-column="103" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -189,7 +212,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -199,27 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cursor/rybak/game/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vie/ErrorMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vieц/ErrorMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/ErrorMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/Console.java" />
-        <option value="$PROJECT_DIR$/src/main/java/labyrinth/Dungeon.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/Colors.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/Undeads.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/Creatures.java" />
-        <option value="$PROJECT_DIR$/src/main/java/labyrinth/RoomDescription.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/Orkoids.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/Monsters.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/AbstractMonster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Zombie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/SkeletonChief.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Skeleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Lich.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Banshee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/BoneDragon.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/UnstableAlchemist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/OrkWarlord.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/OrkShaman.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Ork.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Goblin.java" />
@@ -231,14 +235,53 @@
         <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/BlackDragon.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Ogre.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/team/Team.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/impl/OrkShaman.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/creature/BlackDragon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/creature/Doomguard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/creature/DoomSpider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/orkoid/Goblin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/orkoid/UnstableAlchemist.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/creature/Succubus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/undead/BoneDragon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/undead/SkeletonChief.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/undead/Skeleton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/orkoid/OrkWarlord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/orkoid/Ogre.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/creature/Minotaur.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/undead/Lich.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/creature/Imp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/UserInteraction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/hero/Race.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/hero/Speciality.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Team.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Team.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/MagicColors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/ErrorMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/TeamMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/hero/HeroNames.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/GeneralMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/GameMessages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/Console.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/Validator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/GameConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/hero/Races.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/Mode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/hero/Hero.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/labyrinth/Dungeon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/AbstractMonster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/undead/Banshee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/enemy/Monster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/Team.java" />
         <option value="$PROJECT_DIR$/src/main/java/labyrinth/Room.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="238" />
     <option name="y" value="27" />
-    <option name="width" value="1904" />
+    <option name="width" value="1222" />
     <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -247,9 +290,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,14 +315,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="D-D-RPG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CURSOR (Nick).RPG" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BubleSort-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -373,22 +424,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32905483" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32905483" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32905483" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32905483" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31695905" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32905483" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21771611" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17022412" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -397,10 +446,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.22987165" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905483" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.22287048" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -412,101 +462,199 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/StartGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/GeneralMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/ErrorMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/store/components/DwarfHeroesMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/MagicColors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/store/RaceMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/GeneralMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/ErrorMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/TeamMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/orkoid/Goblin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/store/components/DwarfHeroesMap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/undead/Zombie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/store/components/ElfHeroesMap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/orkoid/UnstableAlchemist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/store/components/HumanHeroesMap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/creature/Succubus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/undead/SkeletonChief.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/undead/Skeleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/orkoid/OrkWarlord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/orkoid/OrkShaman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/orkoid/Ork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/orkoid/Ogre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/creature/Minotaur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/undead/Lich.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/creature/Imp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/hero/human/priest/Priest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/hero/human/priest/abilities/LayFists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/hero/human/priest/abilities/HandGod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/hero/elf/gunslinger/abilities/map/GunslingerAbilitiesMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/MagicColors.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/store/components/DwarfHeroesMap.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/store/components/HumanHeroesMap.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/store/RaceMap.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/Colors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/race/RaceInitValues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/race/CalcConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/race/AbstractRace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/UserInteraction.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/Message.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/hero/Speciality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/Console.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="e#1558#1559#0" expanded="true" />
+            <element signature="e#1585#1586#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StartGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding>
+            <element signature="e#88#89#0" expanded="true" />
+            <element signature="e#116#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/TeamMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/ErrorMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -519,356 +667,152 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="285">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/GameConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/Console.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/Colors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/Mode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/UserInteraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="106" column="33" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/Orkoids.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" selection-start-line="6" selection-start-column="4" selection-end-line="12" />
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Zombie.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/GeneralMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/SkeletonChief.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="345">
+          <caret line="25" column="78" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Skeleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Lich.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/Banshee.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/hero/HeroNames.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-          </folding>
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/impl/BoneDragon.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/GameMessages.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-          </folding>
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/undead/Undeads.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/hero/Races.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="195">
+          <caret line="13" column="114" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="114" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/UnstableAlchemist.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/Monsters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" selection-start-line="10" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/OrkWarlord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/OrkShaman.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Ork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Goblin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Succubus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Minotaur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Imp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/DoomSpider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/BlackDragon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/Creatures.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/undead/Banshee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="40" selection-start-line="6" selection-start-column="4" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/creature/impl/Doomguard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/AbstractMonster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/kind/orkoid/impl/Ogre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="510">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/Monsters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/Enum.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/team/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StartGame.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enemy/undead/BoneDragon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/labyrinth/RoomDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="73" />
           <folding>
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/labyrinth/Room.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/Mode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="45">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2041#2042#0" expanded="true" />
-            <element signature="e#2097#2098#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/labyrinth/Dungeon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        <state relative-caret-position="855">
+          <caret line="57" column="103" selection-start-line="57" selection-start-column="103" selection-end-line="57" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1725#1726#0" expanded="true" />
-            <element signature="e#1753#1754#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/labyrinth/RoomDescription.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/labyrinth/Room.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="-335">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/hero/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="94" column="79" lean-forward="true" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/hero/AbstractAbility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
