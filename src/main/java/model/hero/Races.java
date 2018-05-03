@@ -15,11 +15,11 @@ public enum Races implements Colors {
     R2("Human",
             "Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks " +
                     "and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a " +
-                    "burning hatred of goblins and orcs—these common threads unite all dwarves.",
+                    "burning hatred of goblins and orcs—these common threads unite all dwarfes.",
             new int[]{10, 30, 20, 15, 15}),
     R3("Dwarf",
             "In the reckonings of most worlds, humans are the youngest of the common races, late to arrive " +
-                    "on the world scene and short-lived in comparison to dwarves, elves, and dragons. " +
+                    "on the world scene and short-lived in comparison to dwarfes, elves, and dragons. " +
                     "Perhaps it is because of their shorter lives that they strive to achieve as much as they can " +
                     "in the years they are given. Or maybe they feel they have something to prove to the elder " +
                     "races, and that’s why they build their mighty empires on the foundation of conquest and trade. " +
@@ -27,7 +27,7 @@ public enum Races implements Colors {
             new int[]{5, 45, 15, 20, 5});
 
     public final String name;
-    public final String description;
+    private final String description;
     public final int[] parameters;
     public static final String[] parametersNames = {"Charisma", "Stamina", "Intellect", "Agility", "Concentration"};
 

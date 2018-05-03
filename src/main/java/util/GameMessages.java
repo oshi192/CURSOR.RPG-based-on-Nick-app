@@ -1,6 +1,6 @@
 package util;
 
-public interface GameMessages extends Colors {
+interface GameMessages extends Colors {
     String GAME_NAME = RED+"Good ‘ol RPG"+RESET;
     String GAME_DESCRIPTION = "We must fight against monsters in the Labyrinth. For doing this we need a team of three " +
             "characters, one of them is a leader and he determinate order of moves. In case of a leader's death or if we find special item " +

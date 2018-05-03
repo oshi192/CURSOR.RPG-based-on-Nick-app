@@ -19,7 +19,7 @@ public class Room implements Colors, GameConstants,MonstersConstants {
     @Getter
     public String doorSignboard;
     @Getter
-    private int enemysNumberHp;
+    private int enemiesNumberHp;
     private Random random = new Random();
     private List<AbstractMonster> enemies = new ArrayList<>();
     @Getter
@@ -31,7 +31,7 @@ public class Room implements Colors, GameConstants,MonstersConstants {
         this.name = rd.name;
         this.doorSignboard = rd.doorSignboard;
         this.description = rd.description;
-        enemysNumberHp = rd.coefficientOfHostility * AbstractMonster.MIDDLE_HEALTH_NUMBER;
+        enemiesNumberHp = rd.coefficientOfHostility * AbstractMonster.MIDDLE_HEALTH_NUMBER;
         this.monstersType = rd.monsterType;
         setMonstersHealth();
         fillEnemies();
@@ -46,12 +46,12 @@ public class Room implements Colors, GameConstants,MonstersConstants {
     }
 
     private void fillEnemies() {
-        while (enemysNumberHp > chooseType(monstersType)) {
+        while (enemiesNumberHp > chooseType(monstersType)) {
             String s = monstersType + (random.nextInt(6) + 1);
             Monsters monsters = Monsters.valueOf(s);
-            if (enemysNumberHp > minMonstersHealth.get(monstersType)) {
+            if (enemiesNumberHp > minMonstersHealth.get(monstersType)) {
                 enemies.add(new AbstractMonster(monsters));
-                enemysNumberHp -= monsters.health;
+                enemiesNumberHp -= monsters.health;
             }
         }
     }

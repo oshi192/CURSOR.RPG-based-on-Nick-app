@@ -90,7 +90,7 @@ public enum RoomDescription {
     public final String name;
     public final String doorSignboard;
     public final String description;
-    public final int coefficientOfHostility;
+    public final int coefficientHostility;
     public final String monsterType;
 
     /**
@@ -103,7 +103,7 @@ public enum RoomDescription {
         this.description = description;
         this.doorSignboard = doorSignboard;
         this.name = name;
-        this.coefficientOfHostility = coefficientOfHostility;
+        this.coefficientHostility = coefficientOfHostility;
         this.monsterType = monsterType;
     }
 }

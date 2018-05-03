@@ -27,7 +27,7 @@ public class Hero implements Colors, GameConstants/* implements Speciality*/ {
     private boolean isLeader;
     @Getter
     private int upgradePoints;
-    int initiative;
+    private int initiative;
     private String name;
     private Races race;
     private Specialities speciality;
@@ -100,12 +100,12 @@ public class Hero implements Colors, GameConstants/* implements Speciality*/ {
 
     ////////////////////////////////////////end distribute upgrade points //////////////////////////////////////////////
     /////////////////////////////////////// level up and recalculate parameters ////////////////////////////////////////
-    public void levelUp(int sumXp, int sumLvls) {
+    public void levelUp(int sumXp, int sumLevels) {
         this.xp += calculateXp(sumXp);
         if (this.xp >= dLevelUp & level <= MAX_LEVEL) {
             level++;
             this.xp -= dLevelUp;
-            dLevelUp = dLevelUp * (100 - sumLvls) / 100 + dLevelUp;
+            dLevelUp = dLevelUp * (100 - sumLevels) / 100 + dLevelUp;
             upgradePoints = 10;
         }
     }
@@ -117,7 +117,7 @@ public class Hero implements Colors, GameConstants/* implements Speciality*/ {
     }
 
     private void recalculateParameters() {
-        health = parameters.get("Stamina") * 2;//0.25 helth regen
+        health = parameters.get("Stamina") * 2;//0.25 health regen
         manna = parameters.get("Intellect") * 2;//0.25 manna regen
         rage = parameters.get("Agility") * 4;
         chanceToAvoidHit = parameters.get("Agility") / 2;

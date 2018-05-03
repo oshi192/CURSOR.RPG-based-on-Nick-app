@@ -2,7 +2,6 @@ package game;
 
 import labyrinth.Dungeon;
 import util.GeneralMessage;
-import util.TeamMessage;
 
 public class Game {
     final static Dungeon dungeon = new Dungeon();
@@ -15,7 +14,6 @@ public class Game {
     public static void start() {
         GeneralMessage.welcomeInfo();
         team = new Team();
-        TeamMessage.printTeamInfo(team);
         turn();
     }
 

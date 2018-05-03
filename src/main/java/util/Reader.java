@@ -1,7 +1,7 @@
 package util;
 import java.util.Scanner;
 
-public final class Reader {
+final class Reader {
     private static Scanner sc;
 
     private Reader() throws IllegalStateException {

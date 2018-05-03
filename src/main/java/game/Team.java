@@ -92,10 +92,10 @@ public class Team implements Colors, GameConstants {
     /////////////////////////////////////// battle phase and calculate xp //////////////////////////////////////////////
 
     void battlePhase() {
-        if (position.getEnemysNumberHp() != 0) {
+        if (position.getEnemiesNumberHp() != 0) {
             position.printEnemiesInRoom();
             int sumXp = battle();
-            distrybutionXp(sumXp);
+            distributionXp(sumXp);
             for (Hero h : heroes) {
                 if (h.getUpgradePoints() > 0) {
                     h.distributingUpgradePoints();
@@ -106,11 +106,11 @@ public class Team implements Colors, GameConstants {
 
 
     private int battle() {
-        //I dont know what will do this method but he will return xp after battle actions
+        //I don't know what will do this method but he will return xp after battle actions
         return 0;
     }
 
-    private void distrybutionXp(int sumXp) {
+    private void distributionXp(int sumXp) {
         int levelsSum = calculateSumLevels();
         for (Hero h : heroes) {
             h.levelUp(sumXp, levelsSum);

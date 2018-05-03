@@ -1,9 +1,5 @@
 package util;
 
-import util.Colors;
-import util.Console;
-import util.GameMessages;
-
 public class GeneralMessage implements GameMessages {
     /**
      * welcome message
@@ -32,7 +28,7 @@ public class GeneralMessage implements GameMessages {
                 "\t\t| 0.25hp regen per 1 point\n" +
 
                 "\t3) INTELLECT\n" +
-                "\t\t| per additional 1 intellect point hero gain 2 mana points (mp)\n" +
+                "\t\t| per additional 1 intellect point hero gain 2 manna points (mp)\n" +
                 "\t\t| 0.25mp regen per 1 point\n" +
 
                 "\t4) AGILITY\n" +

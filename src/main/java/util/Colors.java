@@ -1,7 +1,7 @@
 package util;
 
 public interface Colors {
-    String DARKGREY_ON_WHITE = "\u001B[7m";
+    String DARK_GREY_ON_WHITE = "\u001B[7m";
     String RESET = "\u001B[0m";
     String RED = "\u001B[31m";
     String GREEN = "\u001B[32m";

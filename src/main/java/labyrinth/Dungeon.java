@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Dungeon implements Colors, GameConstants {
     @Getter
     private ArrayList<Room> rooms = new ArrayList<>();
-    private int maxLength;
+    private final int maxLength;
 
     public Dungeon() {
         maxLength = LABYRINTH_MAIN_LINE_LENGTH + (int) (Math.random() * 3);

@@ -4,11 +4,10 @@ import util.Colors;
 import util.Console;
 
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 public enum Specialities implements Colors {
     ELF_S1("Mage", "imposition of an improvement on the character of his unit can hold wizard Stuff, " +
-            "can have various spells (requires mana consumption):",
+            "can have various spells (requires manna consumption):",
             Arrays.stream(SpecialityActions.values())
                     .filter(x -> x.name().contains("ELF_S1"))
                     .toArray(SpecialityActions[]::new)),

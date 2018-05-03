@@ -11,7 +11,7 @@ public class AbstractMonster {
     @Setter
     private boolean spellImmune = false;
 
-    private String kind; // kind of monster (e.g. UNDEAD, ORKOID, CREATURE)
+    private String kind;
     private String name; // name of monster in certain kind
     private int health;
     private int initiative;
