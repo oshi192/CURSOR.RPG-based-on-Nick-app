@@ -25,9 +25,7 @@ public enum Monsters {
     public final int health;
     public final int initiative;
     public final int cost;
-    public final static int MIN_ORKOIDS_HEALTH=40;
-    public final static int MIN_UNDEAD_HEALTH=40;
-    public final static int MIN_CREATURES_HEALTH=40;
+
     Monsters(String name, int health, int initiative, int cost) {
         this.name = name;
         this.health = health;

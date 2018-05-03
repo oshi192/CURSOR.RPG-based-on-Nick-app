@@ -3,13 +3,14 @@ package labyrinth;
 import lombok.Getter;
 import model.enemy.AbstractMonster;
 import model.enemy.Monsters;
+import model.enemy.MonstersConstants;
 import util.Colors;
 import util.Console;
 import util.GameConstants;
 
 import java.util.*;
 
-public class Room implements Colors, GameConstants {
+public class Room implements Colors, GameConstants,MonstersConstants {
 
     @Getter
     private String name;
@@ -39,9 +40,9 @@ public class Room implements Colors, GameConstants {
     /////////////////////////////////////// for constructor variables //////////////////////////////////////////////////
 
     private void setMonstersHealth() {
-        minMonstersHealth.put("Undeads", Monsters.MIN_UNDEAD_HEALTH);
-        minMonstersHealth.put("Orkoids", Monsters.MIN_ORKOIDS_HEALTH);
-        minMonstersHealth.put("Creatures", Monsters.MIN_CREATURES_HEALTH);
+        minMonstersHealth.put("Undeads", MIN_UNDEAD_HEALTH);
+        minMonstersHealth.put("Orkoids", MIN_ORKOIDS_HEALTH);
+        minMonstersHealth.put("Creatures", MIN_CREATURES_HEALTH);
     }
 
     private void fillEnemies() {

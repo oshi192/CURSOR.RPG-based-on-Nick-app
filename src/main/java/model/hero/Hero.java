@@ -5,14 +5,16 @@ import lombok.Setter;
 import util.Colors;
 import util.GameConstants;
 import util.Validator;
-import view.GeneralMessage;
+import util.GeneralMessage;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Getter
-@Setter
+//
+//@Getter
+//@Setter
 public class Hero implements Colors, GameConstants/* implements Speciality*/ {
+    @Getter
     private int level;
     private int dLevelUp;
     private int health;
@@ -21,15 +23,19 @@ public class Hero implements Colors, GameConstants/* implements Speciality*/ {
     private int rage;
     private int xp;
     private int chanceToAvoidHit;
+    @Setter
     private boolean isLeader;
+    @Getter
     private int upgradePoints;
     int initiative;
     private String name;
     private Races race;
+    private Specialities speciality;
     private Map<String, Integer> parameters = new HashMap<>();
 
-    public Hero(Races race) {
+    public Hero(Races race, Specialities speciality) {
         this.race = race;
+        this.speciality = speciality;
         setParameters();
         setName();
         isLeader = false;
@@ -39,6 +45,7 @@ public class Hero implements Colors, GameConstants/* implements Speciality*/ {
         level = 1;
         dLevelUp = 100;
     }
+
     ////////////////////////////////////// to creating object ///////////////////////////////////////////////////////////
     private void setParameters() {
         for (int i = 0; i < Races.parametersNames.length; i++) {
@@ -99,7 +106,7 @@ public class Hero implements Colors, GameConstants/* implements Speciality*/ {
             level++;
             this.xp -= dLevelUp;
             dLevelUp = dLevelUp * (100 - sumLvls) / 100 + dLevelUp;
-            upgradePoints=10;
+            upgradePoints = 10;
         }
     }
 
@@ -108,12 +115,13 @@ public class Hero implements Colors, GameConstants/* implements Speciality*/ {
         result += (int) ((isLeader ? xp * 0.4 : 0.3) * parameters.get("Charisma") / 100);
         return result;
     }
-    private void recalculateParameters(){
-        health = parameters.get("Stamina")*2;//0.25 helth regen
-        manna = parameters.get("Intellect")*2;//0.25 manna regen
-        rage = parameters.get("Agility")*4;
-        chanceToAvoidHit = parameters.get("Agility")/2;
-        initiative = parameters.get("Charisma")/2;
+
+    private void recalculateParameters() {
+        health = parameters.get("Stamina") * 2;//0.25 helth regen
+        manna = parameters.get("Intellect") * 2;//0.25 manna regen
+        rage = parameters.get("Agility") * 4;
+        chanceToAvoidHit = parameters.get("Agility") / 2;
+        initiative = parameters.get("Charisma") / 2;
         //"Concentration"
     }
     /////////////////////////////////////// end level up and recalculate parameters ////////////////////////////////////

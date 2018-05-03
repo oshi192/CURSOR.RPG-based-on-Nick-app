@@ -5,6 +5,7 @@ import lombok.Setter;
 import model.hero.Hero;
 import model.hero.Races;
 import lombok.Getter;
+import model.hero.Specialities;
 import util.Colors;
 import util.GameConstants;
 import util.Validator;
@@ -38,11 +39,24 @@ public class Team implements Colors, GameConstants {
 
     private void chooseHero() {
         Races r = chooseHeroRace();
-        Hero h = new Hero(r);
+        Specialities spec=chooseHeroSpeciality(r.name);
+        Hero h = new Hero(r,spec);
         heroes.add(h);
         System.out.println("Good choice! " + h.toStringRacesAndNames() + " joins your team!");
     }
+    private Specialities chooseHeroSpeciality(String raceName) {
+        int answer;
+        do {
+            System.out.println("choose speciality: "+raceName);
+            Specialities.printSpecialities(raceName);
+            answer = Validator.getNumber("", 0, Specialities.values().length/3);
+            if (answer == 0) {
+                Specialities.printSpecialitiesDescription(raceName);
+            }
+        } while (answer == 0);
+        return Specialities.valueOf(raceName.toUpperCase() + "_S"+answer);
 
+    }
     private Races chooseHeroRace() {
         int answer;
         do {

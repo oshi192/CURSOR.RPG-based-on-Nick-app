@@ -25,16 +25,4 @@ public class AbstractMonster {
         this.cost = m.cost;
     }
 
-    /**
-     * health should not be less 0
-     *
-     * @param health new health
-     */
-    public void setHealth(int health) {
-        this.health = health < MIN_HEALTH ? MIN_HEALTH : health;
-    }
-
-    public  int attack(){
-        return 0;//will fix in battle steps
-    }
 }

@@ -1,8 +1,8 @@
 package game;
 
 import labyrinth.Dungeon;
-import view.GeneralMessage;
-import view.TeamMessage;
+import util.GeneralMessage;
+import util.TeamMessage;
 
 public class Game {
     final static Dungeon dungeon = new Dungeon();

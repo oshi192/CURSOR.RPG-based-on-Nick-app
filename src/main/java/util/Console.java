@@ -18,7 +18,7 @@ public class Console implements GameConstants,Colors{
             sb.append(String.valueOf(s.charAt(i)));
             if (s.charAt(i) == ' ' || i == s.length() - 1) {
                 index += sb.length();
-                if (index > TAB * 9 + 4) {
+                if (index > PARAGRAPH_LENGTH) {
                     System.out.println();
                     index=sb.length();
                 }
@@ -64,11 +64,9 @@ public class Console implements GameConstants,Colors{
     private void printTopLine(int number) {
         System.out.print(TABLE_COLOR + "\u250F");//┏
         int k=(PARAGRAPH_LENGTH - number - 1) / number;
-        for(int i=0;i<number-1;i++) {
-            fillSpace(k, "\u2501");// ━
-            System.out.print("\u2533");
-        }
-        fillSpace((PARAGRAPH_LENGTH -(k-1)*number)-1, "\u2501");
+            fillSpace(number, "\u2501");// ━
+            System.out.print("\u2533");//┳
+        fillSpace(PARAGRAPH_LENGTH -number-3, "\u2501");
         System.out.println("\u2513"+RESET);
        // System.out.print("\u2503" + RESET);//┃
     }

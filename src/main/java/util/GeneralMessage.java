@@ -1,4 +1,4 @@
-package view;
+package util;
 
 import util.Colors;
 import util.Console;

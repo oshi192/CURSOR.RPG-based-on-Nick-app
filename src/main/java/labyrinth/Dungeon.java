@@ -59,11 +59,15 @@ public class Dungeon implements Colors, GameConstants {
     public void printMap(){
         for(int i=0;i<maxLength;i++){
             System.out.print (this.rooms.get(i).getName()+" >>>> ");
-            for(Room r:this.rooms.get(i).getExits()){
-                System.out.print("["+r.getName()+"] ");
+            System.out.println();
+        }
+        for(int i=0;i<maxLength;i++){
+            for(int j=2;j<rooms.get(i).getExits().size();j++){
+                System.out.print("["+i+":"+rooms.get(i).getExits().get(j).getName()+"] ");
             }
             System.out.println();
         }
     }
+
 
 }
