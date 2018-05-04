@@ -30,10 +30,11 @@ public class Room implements Colors, GameConstants {
         if (roomDescription.coefficientHostility != 0) {
             enemies = new ArrayList<>();
             Monsters[] monsters = avaibleMonsters();
-            int startInex = (lvlSum - NUMBER_OF_HEROES) * (monsters.length - 1) / (MAX_LEVEL * NUMBER_OF_HEROES - NUMBER_OF_HEROES);
+            int startInex = (lvlSum - NUMBER_OF_HEROES) * (monsters.length - 1)
+                    / (MAX_LEVEL * NUMBER_OF_HEROES - NUMBER_OF_HEROES);
             int enHp = enemiesNumberHp + (lvlSum - NUMBER_OF_HEROES) * roomDescription.coefficientHostility;
-            while (enHp >= monsters[startInex].health) {
-                int index = random.nextInt(monsters.length - startInex) + startInex;
+            while (enHp >= monsters[0].health) {
+                int index = random.nextInt(startInex);
                 if (enHp >= monsters[index].health) {
                     enemies.add(new AbstractMonster(monsters[index]));
                     enHp -= monsters[index].health;
