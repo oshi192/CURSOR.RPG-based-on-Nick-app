@@ -26,31 +26,27 @@ public class Room implements Colors, GameConstants {
     }
     /////////////////////////////////////// Create monsters ////////////////////////////////////////////////////////////
 
-    public void enemiesGenerator(int lvlSum) {
+    public void monstersGenerator(int lvlSum) {
         if (roomDescription.coefficientHostility != 0) {
             enemies = new ArrayList<>();
-            int minH = Monsters.getMinOrMaxHealth(roomDescription.monsterType, true);
-            int maxH = Monsters.getMinOrMaxHealth(roomDescription.monsterType, false);
-            int minMonsterHp = (lvlSum - NUMBER_OF_HEROES) * (maxH - minH) / 2
-                    / (MAX_LEVEL * NUMBER_OF_HEROES - NUMBER_OF_HEROES) + minH;
-            shooseMonsters(minMonsterHp, lvlSum);
+            Monsters[] monsters = avaibleMonsters();
+            int startInex = (lvlSum - NUMBER_OF_HEROES) * (monsters.length - 1) / (MAX_LEVEL * NUMBER_OF_HEROES - NUMBER_OF_HEROES);
+            int enHp = enemiesNumberHp + (lvlSum - NUMBER_OF_HEROES) * roomDescription.coefficientHostility;
+            while (enHp >= monsters[startInex].health) {
+                int index = random.nextInt(monsters.length - startInex) + startInex;
+                if (enHp >= monsters[index].health) {
+                    enemies.add(new AbstractMonster(monsters[index]));
+                    enHp -= monsters[index].health;
+                }
+            }
         }
     }
 
-    private void shooseMonsters(int minMonsterHp, int lvlSum) {
-        Monsters[] monsters = Arrays.stream(Monsters.values())
-                .filter(x -> x.name().contains(roomDescription.monsterType) & x.health > minMonsterHp)
-                .filter(x -> x.health > minMonsterHp)
+    private Monsters[] avaibleMonsters() {
+        return Arrays.stream(Monsters.values())
+                .filter(x -> x.name().contains(roomDescription.monsterType))
                 .sorted(Comparator.comparing(Monsters::getHealth))
                 .toArray(Monsters[]::new);
-        int enHp = enemiesNumberHp + lvlSum * roomDescription.coefficientHostility;
-        while (enHp >= monsters[0].health) {
-            int index = random.nextInt(monsters.length);
-            if (enHp >= monsters[index].health) {
-                enemies.add(new AbstractMonster(monsters[index]));
-                enHp -= monsters[index].health;
-            }
-        }
     }
 
     /////////////////////////////////////// end  Create monsters ///////////////////////////////////////////////////////
