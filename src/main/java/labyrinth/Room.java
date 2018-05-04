@@ -3,78 +3,65 @@ package labyrinth;
 import lombok.Getter;
 import model.enemy.AbstractMonster;
 import model.enemy.Monsters;
-import model.enemy.MonstersConstants;
 import util.Colors;
 import util.Console;
 import util.GameConstants;
 
 import java.util.*;
 
-public class Room implements Colors, GameConstants,MonstersConstants {
+public class Room implements Colors, GameConstants {
 
-    @Getter
-    private String name;
-    @Getter
-    public String description;
-    @Getter
-    public String doorSignboard;
     @Getter
     private int enemiesNumberHp;
     private Random random = new Random();
-    private List<AbstractMonster> enemies = new ArrayList<>();
+    private List<AbstractMonster> enemies;
     @Getter
     private List<Room> exits = new ArrayList<>();
-    private Map<String, Integer> minMonstersHealth = new HashMap<>();
-    private String monstersType;
+    @Getter
+    private RoomDescription roomDescription;
 
-    Room(RoomDescription rd) {
-        this.name = rd.name;
-        this.doorSignboard = rd.doorSignboard;
-        this.description = rd.description;
-        enemiesNumberHp = rd.coefficientOfHostility * AbstractMonster.MIDDLE_HEALTH_NUMBER;
-        this.monstersType = rd.monsterType;
-        setMonstersHealth();
-        fillEnemies();
-
+    Room(RoomDescription roomDescription) {
+        this.roomDescription = roomDescription;
+        enemiesNumberHp = roomDescription.coefficientHostility * AbstractMonster.MIDDLE_HEALTH_NUMBER;
     }
-    /////////////////////////////////////// for constructor variables //////////////////////////////////////////////////
+    /////////////////////////////////////// Create monsters ////////////////////////////////////////////////////////////
 
-    private void setMonstersHealth() {
-        minMonstersHealth.put("Undeads", MIN_UNDEAD_HEALTH);
-        minMonstersHealth.put("Orkoids", MIN_ORKOIDS_HEALTH);
-        minMonstersHealth.put("Creatures", MIN_CREATURES_HEALTH);
+    public void enemiesGenerator(int lvlSum) {
+        if (roomDescription.coefficientHostility != 0) {
+            enemies = new ArrayList<>();
+            int minH = Monsters.getMinOrMaxHealth(roomDescription.monsterType, true);
+            int maxH = Monsters.getMinOrMaxHealth(roomDescription.monsterType, false);
+            int minMonsterHp = (lvlSum - NUMBER_OF_HEROES) * (maxH - minH) / 2
+                    / (MAX_LEVEL * NUMBER_OF_HEROES - NUMBER_OF_HEROES) + minH;
+            shooseMonsters(minMonsterHp, lvlSum);
+        }
     }
 
-    private void fillEnemies() {
-        while (enemiesNumberHp > chooseType(monstersType)) {
-            String s = monstersType + (random.nextInt(6) + 1);
-            Monsters monsters = Monsters.valueOf(s);
-            if (enemiesNumberHp > minMonstersHealth.get(monstersType)) {
-                enemies.add(new AbstractMonster(monsters));
-                enemiesNumberHp -= monsters.health;
+    private void shooseMonsters(int minMonsterHp, int lvlSum) {
+        Monsters[] monsters = Arrays.stream(Monsters.values())
+                .filter(x -> x.name().contains(roomDescription.monsterType) & x.health > minMonsterHp)
+                .filter(x -> x.health > minMonsterHp)
+                .sorted(Comparator.comparing(Monsters::getHealth))
+                .toArray(Monsters[]::new);
+        int enHp = enemiesNumberHp + lvlSum * roomDescription.coefficientHostility;
+        while (enHp >= monsters[0].health) {
+            int index = random.nextInt(monsters.length);
+            if (enHp >= monsters[index].health) {
+                enemies.add(new AbstractMonster(monsters[index]));
+                enHp -= monsters[index].health;
             }
         }
     }
 
-    private int chooseType(String s) {
-        int i;
-        try {
-            i = minMonstersHealth.get(s);
-        } catch (NullPointerException e) {
-            i = 0;
-        }
-        return i;
-    }
-
-    /////////////////////////////////////// end for constructor variables //////////////////////////////////////////////
+    /////////////////////////////////////// end  Create monsters ///////////////////////////////////////////////////////
     void addExit(Room r) {
         exits.add(r);
     }
 
     /////////////////////////////////////// printing room stuff ////////////////////////////////////////////////////////
     public void printRoomInfo() {
-        roomSignboard(name);
-        Console.printParagraph(description);
+        roomSignboard(roomDescription.name);
+        Console.printParagraph(roomDescription.description);
     }
 
     private void roomSignboard(String name) {
@@ -93,7 +80,7 @@ public class Room implements Colors, GameConstants,MonstersConstants {
             int index = (shift + i) % exits.size();
             System.out.println(GREEN + "\u2B9A" + RESET + "[" + (i + 1) + "] " +
                     ((previous == exits.get(index)) ? GREEN + "(back) " + RESET : "") +
-                    exits.get(index).getDoorSignboard());
+                    exits.get(index).getRoomDescription().doorSignboard);
         }
         return shift;
     }

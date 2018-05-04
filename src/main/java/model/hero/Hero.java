@@ -42,7 +42,7 @@ public class Hero implements Colors, GameConstants/* implements Speciality*/ {
         upgradePoints = 10;
         xp = 0;
         recalculateParameters();
-        level = 1;
+        level = 5;
         dLevelUp = 100;
     }
 

@@ -3,7 +3,7 @@ package model.hero;
 import util.Colors;
 import util.Console;
 
-public enum Races implements Colors {
+public enum Races implements Colors,RacesStartParameters {
 
     R1("Elf",
             "Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. " +
@@ -11,12 +11,12 @@ public enum Races implements Colors {
                     "glittering with faerie light, where soft music drifts through the air and gentle fragrances " +
                     "waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the " +
                     "good things of the world.",
-            new int[]{15, 10, 25, 22, 18}),
+            new int[]{elfCharisma, elfStamina, elfIntellect, elfAgility, elfConcentration}),
     R2("Human",
             "Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks " +
                     "and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a " +
                     "burning hatred of goblins and orcs—these common threads unite all dwarfes.",
-            new int[]{10, 30, 20, 15, 15}),
+            new int[]{humanCharisma, humanStamina, humanIntellect, humanAgility, humanConcentration}),
     R3("Dwarf",
             "In the reckonings of most worlds, humans are the youngest of the common races, late to arrive " +
                     "on the world scene and short-lived in comparison to dwarfes, elves, and dragons. " +
@@ -24,7 +24,7 @@ public enum Races implements Colors {
                     "in the years they are given. Or maybe they feel they have something to prove to the elder " +
                     "races, and that’s why they build their mighty empires on the foundation of conquest and trade. " +
                     "Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
-            new int[]{5, 45, 15, 20, 5});
+            new int[]{dwarfCharisma, dwarfStamina, dwarfIntellect, dwarfAgility, dwarfConcentration});
 
     public final String name;
     private final String description;

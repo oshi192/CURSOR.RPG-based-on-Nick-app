@@ -1,6 +1,9 @@
 package model.enemy;
 
-public enum Monsters {
+import java.util.Arrays;
+import java.util.Comparator;
+
+public enum Monsters{
     Undeads1("Banshee", 75, 15, 15),
     Undeads2("Bone Dragon", 550, 50, 300),
     Undeads3("Lich", 100, 20, 25),
@@ -31,5 +34,22 @@ public enum Monsters {
         this.health = health;
         this.initiative = initiative;
         this.cost = cost;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+    public static int getMinOrMaxHealth(String monsterType,boolean getMin){
+        Monsters[]m=Arrays.stream(Monsters.values())
+                .filter(x->x.name().contains(monsterType))
+                .sorted(Comparator.comparing(Monsters::getHealth))
+                .toArray(Monsters[]::new);
+        int health;
+        if(getMin){
+            health=m[0].health;
+        }else{
+            health=m[m.length-1].health;
+        }
+        return health;
     }
 }

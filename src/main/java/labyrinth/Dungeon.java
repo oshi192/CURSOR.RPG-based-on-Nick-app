@@ -5,10 +5,11 @@ import util.Colors;
 import util.GameConstants;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Dungeon implements Colors, GameConstants {
     @Getter
-    private ArrayList<Room> rooms = new ArrayList<>();
+    private List<Room> rooms = new ArrayList<>();
     private final int maxLength;
 
     public Dungeon() {
@@ -58,12 +59,12 @@ public class Dungeon implements Colors, GameConstants {
     /////////////////////////////////////// end generating dungeon /////////////////////////////////////////////////////
     public void printMap(){
         for(int i=0;i<maxLength;i++){
-            System.out.print (this.rooms.get(i).getName()+" >>>> ");
+            System.out.print (this.rooms.get(i).getRoomDescription().name+" >>>> ");
             System.out.println();
         }
         for(int i=0;i<maxLength;i++){
             for(int j=2;j<rooms.get(i).getExits().size();j++){
-                System.out.print("["+i+":"+rooms.get(i).getExits().get(j).getName()+"] ");
+                System.out.print("["+i+":"+rooms.get(i).getExits().get(j).getRoomDescription().name+"] ");
             }
             System.out.println();
         }

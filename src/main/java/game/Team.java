@@ -130,7 +130,15 @@ public class Team implements Colors, GameConstants {
         int shift = r.printExits(previousPosition);
         int next = Validator.getNumber("move to: ", 1, r.getExits().size());
         r = r.getExits().get((next + shift - 1) % r.getExits().size());
+        r.enemiesGenerator(calculateLvlSum());
         setPosition(r);
+    }
+    private int calculateLvlSum(){
+        int lvlsum=0;
+        for(Hero h:heroes){
+            lvlsum+=h.getLevel();
+        }
+        return lvlsum;
     }
 
     private void setPosition(Room position) {
